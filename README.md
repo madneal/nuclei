@@ -116,10 +116,10 @@ FILTERING:
    -eid, -exclude-id string[]        templates to exclude based on template ids (comma-separated, file)
    -it, -include-templates string[]  templates to be executed even if they are excluded either by default or configuration
    -et, -exclude-templates string[]  template or template directory to exclude (comma-separated, file)
-   -s, -severity value[]             templates to run based on severity. Possible values: info, low, medium, high, critical, unknown
-   -es, -exclude-severity value[]    templates to exclude based on severity. Possible values: info, low, medium, high, critical, unknown
-   -pt, -type value[]                templates to run based on protocol type. Possible values: dns, file, http, headless, network, workflow, ssl, websocket, whois
-   -ept, -exclude-type value[]       templates to exclude based on protocol type. Possible values: dns, file, http, headless, network, workflow, ssl, websocket, whois
+   -s, -severity value[]             templates to run based on severity. Possible values (info, low, medium, high, critical, unknown)
+   -es, -exclude-severity value[]    templates to exclude based on severity. Possible values (info, low, medium, high, critical, unknown)
+   -pt, -type value[]                templates to run based on protocol type. Possible values (dns, file, http, headless, network, workflow, ssl, websocket, whois)
+   -ept, -exclude-type value[]       templates to exclude based on protocol type. Possible values (dns, file, http, headless, network, workflow, ssl, websocket, whois)
 
 OUTPUT:
    -o, -output string            output file to write found issues/vulnerabilities
@@ -151,7 +151,7 @@ CONFIGURATIONS:
    -ztls                       Use ztls library with autofallback to standard one for tls13
 
 INTERACTSH:
-   -iserver, -interactsh-server string  interactsh server url for self-hosted instance (default: oast.pro,oast.live,oast.site,oast.online,oast.fun,oast.me)
+   -iserver, -interactsh-server string  interactsh server url for self-hosted instance (default oast.pro,oast.live,oast.site,oast.online,oast.fun,oast.me)
    -itoken, -interactsh-token string    authentication token for self-hosted interactsh server
    -interactions-cache-size int         number of requests to keep in the interactions cache (default 5000)
    -interactions-eviction int           number of seconds to wait before evicting requests from cache (default 60)
